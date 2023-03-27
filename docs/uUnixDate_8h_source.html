@@ -108,32 +108,35 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            int8_t <a class="code" href="classuUnixDate.html#a9a0d9f889f26815d9605ef9867456f1a">month</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            int16_t <a class="code" href="classuUnixDate.html#a7b4cd276f0ebb38ccda0311dc0d69e86">year</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            uint32_t <a class="code" href="classuUnixDate.html#ae70d6b4aeaa353ad2b297f4026360b63">timestamp</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="comment">// Internal data</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            int8_t _s;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            int8_t _m;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            int8_t _h;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            int8_t _D;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            int8_t _M;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            int16_t _Y;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            uint32_t _ts;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            int8_t <a class="code" href="classuUnixDate.html#a3c85126be2c08c6143e3b5bb954cfac4">dow</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="comment">// Internal data</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            int8_t _s;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            int8_t _m;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            int8_t _h;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            int8_t _D;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            int8_t _M;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            int16_t _Y;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            uint32_t _ts;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            int8_t _dow;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="ttc" id="aclassuUnixDate_html"><div class="ttname"><a href="classuUnixDate.html">uUnixDate</a></div><div class="ttdoc">Tiny and simplified library to convert to and from UNIX timestamps.</div><div class="ttdef"><b>Definition:</b> uUnixDate.h:41</div></div>
 <div class="ttc" id="aclassuUnixDate_html_a0fbb9c0c6908d8272062b7529726b811"><div class="ttname"><a href="classuUnixDate.html#a0fbb9c0c6908d8272062b7529726b811">uUnixDate::uUnixDate</a></div><div class="ttdeci">uUnixDate()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:25</div></div>
-<div class="ttc" id="aclassuUnixDate_html_a5210d8d268e2ddf59b26337013150018"><div class="ttname"><a href="classuUnixDate.html#a5210d8d268e2ddf59b26337013150018">uUnixDate::minute</a></div><div class="ttdeci">int8_t minute()</div><div class="ttdoc">Getter - Gets minute of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:147</div></div>
-<div class="ttc" id="aclassuUnixDate_html_a521a0693b551f315d622b0970d34e1a4"><div class="ttname"><a href="classuUnixDate.html#a521a0693b551f315d622b0970d34e1a4">uUnixDate::setDate</a></div><div class="ttdeci">void setDate(const int16_t, const int8_t, const int8_t, const int8_t, const int8_t, const int8_t)</div><div class="ttdoc">Set date of object.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:110</div></div>
-<div class="ttc" id="aclassuUnixDate_html_a799baae28fd8b2ca2bfd43d1c9c36c1c"><div class="ttname"><a href="classuUnixDate.html#a799baae28fd8b2ca2bfd43d1c9c36c1c">uUnixDate::setTimestamp</a></div><div class="ttdeci">void setTimestamp(const uint32_t)</div><div class="ttdoc">Set Timestamp of object.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:65</div></div>
-<div class="ttc" id="aclassuUnixDate_html_a7b4cd276f0ebb38ccda0311dc0d69e86"><div class="ttname"><a href="classuUnixDate.html#a7b4cd276f0ebb38ccda0311dc0d69e86">uUnixDate::year</a></div><div class="ttdeci">int16_t year()</div><div class="ttdoc">Getter - Gets year of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:179</div></div>
-<div class="ttc" id="aclassuUnixDate_html_a9a0d9f889f26815d9605ef9867456f1a"><div class="ttname"><a href="classuUnixDate.html#a9a0d9f889f26815d9605ef9867456f1a">uUnixDate::month</a></div><div class="ttdeci">int8_t month()</div><div class="ttdoc">Getter - Gets month of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:171</div></div>
-<div class="ttc" id="aclassuUnixDate_html_abea51670489c8203e62d6761a07e917c"><div class="ttname"><a href="classuUnixDate.html#abea51670489c8203e62d6761a07e917c">uUnixDate::second</a></div><div class="ttdeci">int8_t second()</div><div class="ttdoc">Getter - Gets second of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:139</div></div>
-<div class="ttc" id="aclassuUnixDate_html_ad91cea6bfb35f3409ada55c737030a37"><div class="ttname"><a href="classuUnixDate.html#ad91cea6bfb35f3409ada55c737030a37">uUnixDate::hour</a></div><div class="ttdeci">int8_t hour()</div><div class="ttdoc">Getter - Gets hours of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:155</div></div>
-<div class="ttc" id="aclassuUnixDate_html_ae70d6b4aeaa353ad2b297f4026360b63"><div class="ttname"><a href="classuUnixDate.html#ae70d6b4aeaa353ad2b297f4026360b63">uUnixDate::timestamp</a></div><div class="ttdeci">uint32_t timestamp()</div><div class="ttdoc">Getter - Gets seconds of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:187</div></div>
-<div class="ttc" id="aclassuUnixDate_html_af0c2f3980b5657b3e9930afb87b67b4b"><div class="ttname"><a href="classuUnixDate.html#af0c2f3980b5657b3e9930afb87b67b4b">uUnixDate::day</a></div><div class="ttdeci">int8_t day()</div><div class="ttdoc">Getter - Gets day of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:163</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a3c85126be2c08c6143e3b5bb954cfac4"><div class="ttname"><a href="classuUnixDate.html#a3c85126be2c08c6143e3b5bb954cfac4">uUnixDate::dow</a></div><div class="ttdeci">int8_t dow()</div><div class="ttdoc">Getter - Gets DayOfWeek of stored date. 0-Sunday to 6-Saturday.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:199</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a5210d8d268e2ddf59b26337013150018"><div class="ttname"><a href="classuUnixDate.html#a5210d8d268e2ddf59b26337013150018">uUnixDate::minute</a></div><div class="ttdeci">int8_t minute()</div><div class="ttdoc">Getter - Gets minute of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:151</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a521a0693b551f315d622b0970d34e1a4"><div class="ttname"><a href="classuUnixDate.html#a521a0693b551f315d622b0970d34e1a4">uUnixDate::setDate</a></div><div class="ttdeci">void setDate(const int16_t, const int8_t, const int8_t, const int8_t, const int8_t, const int8_t)</div><div class="ttdoc">Set date of object.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:112</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a799baae28fd8b2ca2bfd43d1c9c36c1c"><div class="ttname"><a href="classuUnixDate.html#a799baae28fd8b2ca2bfd43d1c9c36c1c">uUnixDate::setTimestamp</a></div><div class="ttdeci">void setTimestamp(const uint32_t)</div><div class="ttdoc">Set Timestamp of object.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:66</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a7b4cd276f0ebb38ccda0311dc0d69e86"><div class="ttname"><a href="classuUnixDate.html#a7b4cd276f0ebb38ccda0311dc0d69e86">uUnixDate::year</a></div><div class="ttdeci">int16_t year()</div><div class="ttdoc">Getter - Gets year of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:183</div></div>
+<div class="ttc" id="aclassuUnixDate_html_a9a0d9f889f26815d9605ef9867456f1a"><div class="ttname"><a href="classuUnixDate.html#a9a0d9f889f26815d9605ef9867456f1a">uUnixDate::month</a></div><div class="ttdeci">int8_t month()</div><div class="ttdoc">Getter - Gets month of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:175</div></div>
+<div class="ttc" id="aclassuUnixDate_html_abea51670489c8203e62d6761a07e917c"><div class="ttname"><a href="classuUnixDate.html#abea51670489c8203e62d6761a07e917c">uUnixDate::second</a></div><div class="ttdeci">int8_t second()</div><div class="ttdoc">Getter - Gets second of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:143</div></div>
+<div class="ttc" id="aclassuUnixDate_html_ad91cea6bfb35f3409ada55c737030a37"><div class="ttname"><a href="classuUnixDate.html#ad91cea6bfb35f3409ada55c737030a37">uUnixDate::hour</a></div><div class="ttdeci">int8_t hour()</div><div class="ttdoc">Getter - Gets hours of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:159</div></div>
+<div class="ttc" id="aclassuUnixDate_html_ae70d6b4aeaa353ad2b297f4026360b63"><div class="ttname"><a href="classuUnixDate.html#ae70d6b4aeaa353ad2b297f4026360b63">uUnixDate::timestamp</a></div><div class="ttdeci">uint32_t timestamp()</div><div class="ttdoc">Getter - Gets seconds of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:191</div></div>
+<div class="ttc" id="aclassuUnixDate_html_af0c2f3980b5657b3e9930afb87b67b4b"><div class="ttname"><a href="classuUnixDate.html#af0c2f3980b5657b3e9930afb87b67b4b">uUnixDate::day</a></div><div class="ttdeci">int8_t day()</div><div class="ttdoc">Getter - Gets day of stored date.</div><div class="ttdef"><b>Definition:</b> uUnixDate.cpp:167</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
